@@ -1,6 +1,6 @@
 function customEvery(cb, thisArg) {
   for(const [index, item] of this.entries()) {
-    if(thisArg ? !cb.call(thisArg, item, index, this) : !cb(item, index, this)) {
+    if(!cb.call(thisArg, item, index, this)) {
       return false
     }
   }
