@@ -28,6 +28,5 @@ greenApples.customEvery(function(apple, index, arr) {
   console.log("index:",index)
   console.log("arr:",arr)
   console.log('this', this)
-  //console.log("this:",this)
   return apple === '🍏'
 }, mixedApples))
